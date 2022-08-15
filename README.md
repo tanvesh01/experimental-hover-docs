@@ -1,6 +1,9 @@
 # Experimental Hover Docs
 A new way to write docs
 
+![Banner Image for Experimental hover docs](https://user-images.githubusercontent.com/52021185/184684388-56e59f17-bac4-4f56-9d70-54db5a2c30af.png)
+
+
 ## How we write docs today
  
 In every docs you see around the web in every page there is a bunch of links/text around a boring or sometimes kinda fancy code snippet thingy. But that can get annoying pretty quickly as you have to scroll back and forth between the code snippet and the actual text referring that code.
