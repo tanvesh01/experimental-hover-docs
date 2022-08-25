@@ -1,6 +1,8 @@
 export type UseEffectBabelResponse = {
   startLineNumber: number;
   endLineNumber: number;
+  start: number;
+  end: number;
   dependencies: { name: string }[];
 };
 
