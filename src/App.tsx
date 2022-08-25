@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { transform } from '@babel/standalone';
-import 'codemirror/lib/codemirror.css';
-import 'codemirror/addon/fold/foldgutter.css';
 
 import './App.css';
 import plugin from './plugin';
@@ -16,8 +14,9 @@ import Editor from './Editor';
 import { getHighlighterCoords } from './utils';
 import { BabelReponseInterface, HighlighterStateInterface } from './types';
 import { HoverCardDemo } from './components/Popover/Popover';
+import NewEditor from './NewEditor';
 
-const codeString = `function App() {
+export const codeString = `function App() {
   const [state, setState] =  useState(null)
   const [anotherState, setAnotherState] = useState(false)
 
@@ -62,7 +61,7 @@ const codeString = `function App() {
  
 `;
 
-function parseCode(codeString: string) {
+export function parseCode(codeString: string) {
   return new Promise<BabelReponseInterface>((resolve) =>
     transform(codeString, {
       plugins: [
@@ -83,10 +82,10 @@ function App() {
     },
   ]);
   useEffect(() => {
-    parseCode(codeString).then((res) => {
-      console.log(res, 'RES');
-      setElementCoords(getHighlighterCoords(res));
-    });
+    // parseCode(codeString).then((res) => {
+    //   console.log(res, 'RES');
+    //   setElementCoords(getHighlighterCoords(res));
+    // });
   }, []);
 
   useEffect(() => {
@@ -97,7 +96,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        {elementCoords.map((data) => (
+        {/* {elementCoords.map((data) => (
           <HoverCardDemo content={data.content}>
             <div
               className="code_highlight"
@@ -108,7 +107,8 @@ function App() {
           </HoverCardDemo>
         ))}
 
-        <Editor value={codeString} highlight={true} />
+        <Editor value={codeString} highlight={true} /> */}
+        <NewEditor />
       </div>
     </div>
   );

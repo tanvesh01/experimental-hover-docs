@@ -1,4 +1,5 @@
 @import "./highlight.css";
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -21,6 +22,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -49,9 +51,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -62,9 +66,11 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
@@ -160,7 +166,7 @@ body {
   border-radius: 10px;
 }
 
-.dropIndicator > div {
+.dropIndicator>div {
   max-width: 90%;
   color: #888;
   font-size: 32px;
@@ -182,11 +188,11 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   z-index: 200;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
 }
 
-#Toolbar > * {
+#Toolbar>* {
   flex: 0 0 auto;
   border-right: 1px solid #ddd;
 }
@@ -196,8 +202,8 @@ body {
   background-color: #efefef;
 }
 
-#Toolbar > *,
-#Toolbar > .menuButton > span,
+#Toolbar>*,
+#Toolbar>.menuButton>span,
 #Toolbar button {
   background-color: transparent;
   box-sizing: border-box;
@@ -208,30 +214,30 @@ body {
   outline: none;
 }
 
-#Toolbar > .menuButton > span {
+#Toolbar>.menuButton>span {
   cursor: default;
   padding: 0px 6px;
 }
 
-#Toolbar > * button {
+#Toolbar>* button {
   height: 100%;
   border: none;
   cursor: pointer;
 }
 
-#Toolbar > h1 {
+#Toolbar>h1 {
   padding: 0;
   padding-right: 10px;
   margin: 0;
   font-size: 18px;
 }
 
-#Toolbar > a {
+#Toolbar>a {
   color: inherit;
   text-decoration: none;
 }
 
-#Toolbar .menuButton:hover > ul {
+#Toolbar .menuButton:hover>ul {
   display: block;
 }
 
@@ -261,7 +267,7 @@ body {
   width: 100%;
 }
 
-#Toolbar > *.disabled,
+#Toolbar>*.disabled,
 #Toolbar button:disabled,
 #Toolbar button:disabled:hover,
 #Toolbar button:disabled:active {
@@ -274,13 +280,13 @@ body {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-#Toolbar > a:hover,
-#Toolbar > .button:hover,
+#Toolbar>a:hover,
+#Toolbar>.button:hover,
 #Toolbar ul button:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-#Toolbar > a:active,
+#Toolbar>a:active,
 #Toolbar button:active {
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -357,7 +363,7 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
-.output .toolbar > button {
+.output .toolbar>button {
   margin: 0;
   height: 100%;
   min-width: 90px;
@@ -372,7 +378,7 @@ body {
   cursor: pointer;
 }
 
-.output .toolbar > button.active {
+.output .toolbar>button.active {
   border-color: #999;
   background-color: #999;
   color: #f5f5f5;
@@ -385,13 +391,13 @@ body {
   line-height: 25px;
 }
 
-.output > .container {
+.output>.container {
   overflow: auto;
   flex: 1;
   display: flex;
 }
 
-.output > .no-toolbar {
+.output>.no-toolbar {
   top: 0;
 }
 
@@ -422,14 +428,14 @@ li.entry {
 .CodeMirror .marked,
 .entry.highlighted {
   border-radius: 2px;
-  background-color: rgba(255,240,6,0.4);
+  background-color: rgba(255, 240, 6, 0.4);
 }
 
-.entry > .value {
+.entry>.value {
   white-space: pre-wrap;
 }
 
-.entry > .value .s {
+.entry>.value .s {
   cursor: text;
   -webkit-user-select: text;
   -khtml-user-select: text;
@@ -464,13 +470,13 @@ li.entry {
 
 .compact,
 .tokenName,
-.entry.toggable > .key {
+.entry.toggable>.key {
   cursor: pointer;
 }
 
 .compact:hover,
 .tokenName:hover,
-.entry.toggable > .key:hover > .name {
+.entry.toggable>.key:hover>.name {
   text-decoration: underline;
 }
 
@@ -578,7 +584,7 @@ body .CodeMirror-Tern-tooltip {
   outline: none;
 }
 
-.toggleBtn > .btnText {
+.toggleBtn>.btnText {
   padding-left: 5px;
   font-size: 12px;
 }

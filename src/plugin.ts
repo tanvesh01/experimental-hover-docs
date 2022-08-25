@@ -52,6 +52,8 @@ export default () => {
                   dependencies: [...path.node.arguments[1].elements],
                   startLineNumber: path.node.loc.start.line,
                   endLineNumber: path.node.loc.end.line,
+                  start: path.node.callee.start,
+                  end: path.node.callee.end,
                 },
               ];
             }
