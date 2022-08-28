@@ -10,11 +10,8 @@ import 'prismjs/themes/prism-okaidia.css';
 import 'prismjs/components/prism-jsx.js';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.js';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
-import Editor from './Editor';
-import { getHighlighterCoords } from './utils';
 import { BabelReponseInterface, HighlighterStateInterface } from './types';
-import { HoverCardDemo } from './components/Popover/Popover';
-import NewEditor from './NewEditor';
+import NewEditor from './components/NewEditor/NewEditor';
 
 export const codeString = `function App() {
   const [state, setState] =  useState(null)
