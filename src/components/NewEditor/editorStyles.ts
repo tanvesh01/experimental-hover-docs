@@ -1,4 +1,4 @@
-import { css } from '@stitches/react';
+import { css, keyframes } from '@stitches/react';
 
 import {
   slideDownAndFade,
@@ -6,6 +6,11 @@ import {
   slideRightAndFade,
   slideUpAndFade,
 } from '../Popover/Popover';
+
+const fade = keyframes({
+  '0%': { opacity: 0 },
+  '100%': { opacity: 1 },
+});
 
 export const popOverStyles = css({
   color: 'Black',
@@ -21,6 +26,7 @@ export const popOverStyles = css({
     animationDuration: '400ms',
     animationTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)',
     willChange: 'transform, opacity',
+    animation: `${fade} 0.2s ease`,
     '&[data-state="open"]': {
       '&[data-side="top"]': { animationName: slideDownAndFade },
       '&[data-side="right"]': { animationName: slideLeftAndFade },
